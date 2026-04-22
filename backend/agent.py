@@ -22,7 +22,7 @@ from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "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")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "your_groq_api_key_here")
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./crm.db")
 
 engine = create_async_engine(DATABASE_URL, echo=False)
